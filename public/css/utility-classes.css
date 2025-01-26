@@ -1,0 +1,53 @@
+
+@font-face {
+    font-family: 'Heebo';
+    src: url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap') format('truetype-variations');
+    font-weight: 100 1000;
+    font-display: swap;
+}
+
+:root {
+    --main-bg-color: snow;
+    --secondary-bg-color: darkblue;
+    --main-font-color: darkblue;
+    font-family: 'Heebo', sans-serif;
+
+    @media (width < 600px) {
+        display: none;
+    }
+
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    width: 100vw !important;
+    background: var(--main-bg-color);
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+
+.line {
+    position: absolute;
+    background: var(--main-font-color);
+    z-index: 0;
+    width: 5px;
+    height: 0;
+    left: 50%;
+}
+
+.section {
+    height: 100vh;
+}
